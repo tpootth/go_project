@@ -78,9 +78,7 @@ func handleSubmit() {
 		nameEntry.Text, positionEntry.Text, departmentEntry.Text, totalPrice,
 	)
 
-	// Update result label
 	resultLabel.SetText(results)
 
-	// Optionally, show message box
 	dialog.ShowInformation("Price", fmt.Sprintf("Total Price: $%d", totalPrice), myWindow)
 }
